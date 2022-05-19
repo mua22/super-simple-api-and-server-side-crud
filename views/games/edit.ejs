@@ -1,0 +1,10 @@
+<html>
+    <head></head>
+    <body>
+        <form action="/games/edit/<%-game._id%>" method="post">
+            Name: <input type="text" name="name" value="<%-game.name%>" /> <br />
+            Year: <input type="text" name="year" value="<%-game.year%>"/> <br />
+            <input type="submit" value="Edit Game" /> 
+        </form>
+    </body>
+</html>

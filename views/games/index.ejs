@@ -1,0 +1,15 @@
+<html>
+    <head></head>
+    <body>
+        <a href="/games/create">Create New Game</a>
+        <ul>
+        <%for(let i=0;i<games.length;i++){%>
+            <li>
+                <%-games[i].name%> 
+                <a href="/games/edit/<%-games[i]._id%>">Edit</a> 
+                <a href="/games/delete/<%-games[i]._id%>">Delete</a>
+            </li>
+        <%}%>
+    </ul>
+    </body>
+</html>
